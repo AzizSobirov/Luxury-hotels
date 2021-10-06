@@ -1,0 +1,14 @@
+@mixin flexbox($jc:center,$ai:center) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin grid($gc:1fr 1fr,$gr:1fr 1fr,$gg:10px) {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: $gc;
+    grid-template-rows: $gr;
+}
+
+

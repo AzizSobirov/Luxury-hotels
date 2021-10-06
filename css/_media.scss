@@ -1,0 +1,45 @@
+@media (min-width:758px) {
+    .as_navbar-title{
+        h2{font-size: 2em;}
+    }
+
+    .head{
+        h2{font-size: 5em;}
+    }
+
+    .sec1{
+        &_content{
+            padding: 5vh 5vw;
+            flex-direction: row;
+            box-shadow: unset;
+            .text{
+                padding: 20px;
+                width: 100%;
+                align-items: flex-start;
+                box-shadow: -2.5px 0 0 0 $tc;
+            }
+            img{width: 40vw;}
+        }
+    }
+
+    .sec3_img{
+        span{
+            @include flexbox(space-between);
+            flex-direction: row;
+            h4{margin: 0;}
+        }
+    }
+
+    .sec4_content-form{
+        @include flexbox(space-around);
+        flex-direction: row;
+        input,textarea{
+            width: 100%;
+        }
+    }
+
+    footer ul{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
